@@ -1,0 +1,23 @@
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: {{ template "hmcts.releaseName" . }}
+  labels:
+    app.kubernetes.io/name: {{ template "hmcts.releaseName" . }}
+    helm.sh/chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    app.kubernetes.io/instance: {{ template "hmcts.releaseName" . }}
+spec:
+  schedule: "{{ .Values.schedule }}"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          securityContext:
+            runAsUser: 1000
+            fsGroup: 1000
+          containers:
+            - name: {{ template "hmcts.releaseName" . }}
+              image: {{ .Values.image }}
+          restartPolicy: OnFailure
