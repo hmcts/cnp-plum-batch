@@ -1,0 +1,18 @@
+#!groovy
+
+@Library("Infrastructure")
+
+def type = "java"
+def product = "plum"
+def component = "batch"
+
+withPipeline(type, product, component) {
+  enableDockerBuild()
+  installCharts()
+  disableLegacyDeployment()
+
+  // before('buildinfra:prod') {
+  //   currentBuild.description = "Success!"
+  //   error 'Plum wont be built on prod environment yet.'
+  // }
+}
