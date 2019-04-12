@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@job-deployment")
 
 def type = "java"
 def product = "plum"
@@ -10,6 +10,7 @@ withPipeline(type, product, component) {
   enableDockerBuild()
   installCharts()
   disableLegacyDeployment()
+  nonServiceApp()
 
   // before('buildinfra:prod') {
   //   currentBuild.description = "Success!"
