@@ -1,3 +1,4 @@
-image: hmctssandbox.azurecr.io/hmcts/plum-batch:latest
-replicas: 1
-schedule: "*/1 * * * *"
+job:
+  kind: CronJob
+  image: hmctssandbox.azurecr.io/hmcts/plum-batch:latest
+  schedule: "*/1 * * * *"
