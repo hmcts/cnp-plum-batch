@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure@job-deployment")
+@Library("Infrastructure")
 
 def type = "java"
 def product = "plum"
