@@ -1,4 +1,6 @@
 job:
-  kind: CronJob
   image: hmcts.azurecr.io/hmcts/plum-batch:latest
   schedule: "*/1 * * * *"
+global:
+  job:
+    kind: CronJob
