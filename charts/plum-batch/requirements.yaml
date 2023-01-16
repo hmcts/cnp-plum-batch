@@ -1,4 +1,0 @@
-dependencies:
-   - name: job
-     version: 0.7.5
-     repository: '@hmcts'
