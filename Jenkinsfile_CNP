@@ -8,7 +8,7 @@ def component = "batch"
 
 withPipeline(type, product, component) {
   // enableDockerBuild()
-  installCharts()
+  // installCharts()
   disableLegacyDeployment()
   nonServiceApp()
 
