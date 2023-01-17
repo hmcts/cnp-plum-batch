@@ -1,4 +1,4 @@
-FROM hmcts/cnp-java-base:openjdk-8u191-jre-alpine3.9-1.0
+FROM hmctspublic.azurecr.io/base/java:17-distroless
 
 ENV JAVA_OPTS ""
 

@@ -7,8 +7,8 @@ def product = "plum"
 def component = "batch"
 
 withPipeline(type, product, component) {
-  enableDockerBuild()
-  installCharts()
+  // enableDockerBuild()
+  // installCharts()
   disableLegacyDeployment()
   nonServiceApp()
 
