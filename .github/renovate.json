@@ -10,7 +10,7 @@
     "fileMatch": [
       "\\Chart.yaml$"
     ],
-    "aliases": {
+    "registryAliases": {
       "hmctspublic": "https://hmctspublic.azurecr.io/helm/v1/repo/"
     }
   },
