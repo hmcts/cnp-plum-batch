@@ -76,3 +76,15 @@ sonarqube {
 		property "sonar.projectKey", "cnp-plum-batch"
 	}
 }
+
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+        showStandardStreams = true
+    }
+    reports {
+        junitXml.required = true
+    }
+}
