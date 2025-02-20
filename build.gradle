@@ -38,6 +38,7 @@ dependencies {
 
   implementation 'com.h2database:h2:2.3.232'
   implementation 'ch.qos.logback:logback-core:1.5.14'
+  implementation 'ch.qos.logback:logback-classic:1.5.14'
 }
 
 // https://jeremylong.github.io/DependencyCheck/dependency-check-gradle/configuration.html
