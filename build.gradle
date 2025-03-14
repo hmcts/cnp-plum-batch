@@ -47,6 +47,6 @@ bootJar {
 sonarqube {
 	properties {
 		property "sonar.projectName", "cnp-plum-batch"
-		property "sonar.projectKey", "cnp-plum-batch"
+		property "sonar.projectKey", "hmcts_cnp-plum-batch"
 	}
 }
