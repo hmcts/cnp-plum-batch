@@ -1,4 +1,4 @@
-FROM hmctspublic.azurecr.io/base/java:21-distroless
+FROM hmctspublic.azurecr.io/base/java:pr-21-distroless
 
 ENV JAVA_OPTS ""
 
