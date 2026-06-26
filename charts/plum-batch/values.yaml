@@ -1,5 +1,5 @@
 job:
-  image: hmctspublic.azurecr.io/plum/batch:latest
+  image: hmctsprod.azurecr.io/plum/batch:latest
   schedule: "*/1 * * * *"
 global:
   jobKind: CronJob 
