@@ -6,4 +6,4 @@ apiVersion: v2
 dependencies:
   - name: job
     version: 2.1.2
-    repository: 'https://hmctspublic.azurecr.io/helm/v1/repo/'
+    repository: 'oci://hmctsprod.azurecr.io/helm'
